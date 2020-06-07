@@ -10,20 +10,20 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 
-//controller del turno 1 --> modificare per turno 2
+//controller del turno 2 --> cambiare branch a master_turno1 per turno 1
 
 public class FXMLController {
 	
 	private Model model;
 
-    @FXML
+	@FXML
     private ResourceBundle resources;
 
     @FXML
     private URL location;
 
     @FXML
-    private TextField txtMatricola;
+    private TextField txtCorso;
 
     @FXML
     private Color x1;
@@ -39,11 +39,11 @@ public class FXMLController {
 
     @FXML
     void initialize() {
-        assert txtMatricola != null : "fx:id=\"txtMatricola\" was not injected: check your FXML file 'iscrittiT1.fxml'.";
-        assert x1 != null : "fx:id=\"x1\" was not injected: check your FXML file 'iscrittiT1.fxml'.";
-        assert btnElencoCorsi != null : "fx:id=\"btnElencoCorsi\" was not injected: check your FXML file 'iscrittiT1.fxml'.";
-        assert btnStudentiSimili != null : "fx:id=\"btnStudentiSimili\" was not injected: check your FXML file 'iscrittiT1.fxml'.";
-        assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'iscrittiT1.fxml'.";
+        assert txtCorso != null : "fx:id=\"txtCorso\" was not injected: check your FXML file 'iscrittiT2.fxml'.";
+        assert x1 != null : "fx:id=\"x1\" was not injected: check your FXML file 'iscrittiT2.fxml'.";
+        assert btnElencoCorsi != null : "fx:id=\"btnElencoCorsi\" was not injected: check your FXML file 'iscrittiT2.fxml'.";
+        assert btnStudentiSimili != null : "fx:id=\"btnStudentiSimili\" was not injected: check your FXML file 'iscrittiT2.fxml'.";
+        assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'iscrittiT2.fxml'.";
 
     }
 

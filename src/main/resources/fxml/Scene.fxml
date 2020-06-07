@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="it.polito.tdp.iscritticorsi.FXMLController">
+<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="it.polito.tdp.iscritticorsi.FXMLController">
   <center>
     <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
       <children>
         <HBox alignment="CENTER_LEFT" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
           <children>
-            <Label text="Matricola studente" />
-            <TextField fx:id="txtMatricola" minHeight="-Infinity" prefWidth="200.0">
+            <Label text="Codice corso" />
+            <TextField id="txtMatricola" fx:id="txtCorso" minHeight="-Infinity" prefWidth="200.0">
               <effect>
                 <DropShadow offsetX="5.0" offsetY="5.0">
                   <color>
@@ -29,8 +32,8 @@
         </HBox>
         <HBox alignment="TOP_RIGHT" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
           <children>
-            <Button fx:id="btnElencoCorsi" mnemonicParsing="false" text="Elenco corsi" />
-            <Button fx:id="btnStudentiSimili" mnemonicParsing="false" text="Studenti simili" />
+            <Button fx:id="btnElencoCorsi" mnemonicParsing="false" text="Elenco studenti" />
+            <Button fx:id="btnStudentiSimili" mnemonicParsing="false" text="Corsi simili" />
           </children>
         </HBox>
         <TextArea fx:id="txtResult" editable="false" minHeight="250.0" prefRowCount="20" prefWidth="-1.0" wrapText="true" VBox.vgrow="ALWAYS">
